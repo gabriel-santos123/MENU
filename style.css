@@ -9,5 +9,8 @@ header{
     text-align: center;
 }
 a{
-    
+    text-decoration: none;
+}
+ul{
+    text-align: center;
 }
