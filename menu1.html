@@ -3,47 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Menus </title>
+    <title>Menus</title>
     <link rel="stylesheet" href="style.css">
+    
     <style>
-      
-        header{
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffeff;
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
             text-align: center;
             color: #fffeff;
             background-color: #a09ad4;
-            font-size: 60px;
+            font-size: 3.5em; 
+            padding: 1em;
+            margin-bottom: 1em;
         }
 
-        ul{
+        ul {
             padding-top: 1em;
             padding-bottom: 1em;
+            text-align: center; 
         }
+
         li {
-            display: inline;
-            padding-left: 20px;
+            display: inline-block;
+            margin-right: 20px; 
+            margin-bottom: 10px; 
         }
 
         a {
             text-decoration: none;
             color: #a09ad4;
-            font-size: 28px;
+            font-size: 1.5em;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            display: inline-block;
+            transition: all 0.3s ease; 
         }
 
         a:hover {
             background-color: #e7e5f4;
-            font-size: 32px;
+            font-size: 1.6em;
+            transform: scale(1.05); 
         }
 
+        /* Responsividade */
+        @media (max-width: 600px) {
+            header {
+                font-size: 2.5em;
+            }
+
+            a {
+                font-size: 1.2em;
+                padding: 8px 16px;
+            }
+
+            li {
+                display: block; 
+                margin-right: 0;
+            }
+        }
     </style>
 </head>
 <body>
-    <header> Restaurante sob Medida  </header>
+    <header>Restaurante Sob Medida</header>
     <ul>
-        <li> <a href="#"> Zero glutén</a></li>
-        <li> <a href="#"> Zero lactose </a></li>
-        <li> <a href="#"> Zero açucar</a></li>
-        <li> <a href="#"> Fit </a></li>
-        <li> <a href="index.html"> Home </a></li>
+        <li><a href="#">Zero Glúten</a></li>
+        <li><a href="#">Zero Lactose</a></li>
+        <li><a href="#">Zero Açúcar</a></li>
+        <li><a href="#">Fit</a></li>
+        <li><a href="index.html">Home</a></li>
     </ul>
 </body>
 </html>
