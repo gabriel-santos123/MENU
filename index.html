@@ -3,51 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Menus </title>
+    <title>Menus</title>
     <link rel="stylesheet" href="style.css">
 
     <style>
-        body{
-            background-color: #fffeff;
-            color: whitesmoke;
-            text-align: center;
+        /* Resetando algumas propriedades para consistência */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        a{
+        body {
+            background-color: #fffeff;
+            color: #333; /* Alterando a cor para uma melhor leitura */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background-color: #a09ad4;
+            color: #fffeff;
+            font-size: 3.5em; /* Ajustei para uma melhor proporção */
+            padding: 1.5em 0;
+            margin-bottom: 2em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 1em 0; /* Espaçamento entre os itens */
+        }
+
+        a {
             text-decoration: none;
             color: #a09ad4;
-            line-height: 3em;
-            text-align: center;
-            font-size: 28px;
+            font-size: 1.5em;
+            padding: 1em 2em;
+            background-color: #fff;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
         }
 
-        ul{
-            list-style-type: none;
-            text-align: center;
-            padding-top: 2em;
-            text-decoration: none;
-        }
-        header{
-            text-align: center;
-            color: #fffeff;
-            background-color: #a09ad4;
-            font-size: 60px;
-        }
         a:hover {
             background-color: #e7e5f4;
-            font-size: 32px;
+            font-size: 1.6em;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            header {
+                font-size: 2.5em; /* Ajustando o tamanho da fonte para telas pequenas */
+            }
+
+            a {
+                font-size: 1.2em;
+                padding: 0.8em 1.5em;
+            }
         }
     </style>
 
 </head>
 <body>
-    <header> MENUS </header>
+    <header>Menus</header>
     
     <ul>
-        <li> <a href="menu1.html"> Menu Simples </a></li>
-        <li> <a href="2.html"> Menu Fixado </a></li>
-        <li> <a href="3.html"> Menu Lateral</a> </li>
-        <li> <a href="4.html"> Menu Livre</a></li>
+        <li><a href="menu1.html">Menu Simples</a></li>
+        <li><a href="2.html">Menu Fixado</a></li>
+        <li><a href="3.html">Menu Lateral</a></li>
+        <li><a href="4.html">Menu Livre</a></li>
     </ul>
 
 </body>
